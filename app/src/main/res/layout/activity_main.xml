@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:backgroundTint="#EB5757"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:text="CLICK">
+    </Button>
+
+    <TextView
+        android:id="@+id/moneyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="52sp"
+        android:layout_below="@id/clickButton"
+        android:text="$0">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/clickPowerButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="BUY CLICK POWER ($100)"
+            android:backgroundTint="#EB5757"
+            android:textColor="#FFFFFF">
+
+        </Button>
+        <TextView
+            android:id="@+id/clickPowerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK POWER: $8"/>
+
+        <Button
+            android:id="@+id/robotButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text=" BUY A ROBOT ($1000)"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#EB5757"
+            android:textColor="#FFFFFF">
+
+        </Button>
+        <TextView
+            android:id="@+id/robotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROBOTS: 3"/>
+
+        <Button
+            android:id="@+id/doubleButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text=" ACTIVATE DOUBLE BONUS ($5000)"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#EB5757"
+            android:textColor="#FFFFFF">
+
+        </Button>
+        <TextView
+            android:id="@+id/doubleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOUBLE BONUS: INACTIVE"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
