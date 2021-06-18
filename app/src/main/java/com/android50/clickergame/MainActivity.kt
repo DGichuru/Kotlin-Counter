@@ -17,7 +17,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         clickButton.setOnClickListener {
-            money += 1
+            var clickMultiplier : Int
+
+            if(isDoubleBonusEnabled) {
+                clickMultiplier = 2
+            }else {
+                clickMultiplier = 1
+            }
+             var clickWorth = clickPower * (robotCount + 1) * clickMultiplier
+
+            money += clickWorth
             moneyText.text = "$$money"
         }
 
